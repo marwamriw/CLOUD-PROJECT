@@ -1,23 +1,30 @@
-import logo from './logo.svg';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
+import NavBar from './components/NavBar';
+import Footerr from './components/Footerr';
+import Title from './components/Title';
+import About from './components/about/About';
+import Paragraphe from './components/Paragraphe';
+import Text from './components/Text';
+import Contact from './components/contact/Contact';
+import MapContainers from './components/MapContainers';
 
+//root component for the application
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {/* Display the component Navbar, Title, Pargraphe  */}
+      <NavBar/>
+      <Title/>
+      <h2> INETRIOR DESIGN SERVICES</h2>
+      <Paragraphe/> 
+      {/* Display the component About, Text, MapContainers  */}
+      <About/> 
+      <Text/>
+      <MapContainers/>
+      {/* Display the component Contact ,Footer */}
+      <Contact/>
+      <Footerr/>
     </div>
   );
 }
